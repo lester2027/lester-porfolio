@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Lester's Resume">
+    <title>about</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo">My Portfolio</a>
+        <!--Header Section-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/lesterrific.v/" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:lesterviloria1527@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/lesterrr.v" target="_blank"><i
+                    class="fa-brands fa-square-instagram"></i></a>
+
+        </div>
+
+</body>
+
+<main>
+
+    <!--About Section-->
+    <section id="about">
+        <h1>about.</h1>
+        <h4>I'm a full stack developer based in the tropical country <br>
+            of the Philippines.
+        </h4>
+        <p>Growing up as a kid in the Philippines in the early 90s, I was always the one taking things apart just to see
+            how they worked. That same curiosity led me to coding — and I never looked back. Today I build web
+            applications from the ground up, from pixel-perfect frontends to solid backend systems. When I'm not at my
+            keyboard, you'll find me doing the same thing I did as a kid — figuring out how things work.</p>
+
+        <img src="images/JMP00746.jpg" alt="My Image" class="my-image">
+        <hr class="divider" />
+        <div class="photo-strip">
+            <div class="photo-card"><img src="images/1.jpg" alt=""></div>
+            <div class="photo-card"><img src="images/2.jpg" alt=""></div>
+            <div class="photo-card"><img src="images/3.jpg" alt=""></div>
+            <div class="photo-card"><img src="images/4.jpg" alt=""></div>
+            <div class="photo-card"><img src="images/5.jpg" alt=""></div>
+            <div class="photo-card"><img src="images/6.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <!--Pie Chart Section-->
+    <section class="piechart">
+            <!-- LEFT: Frontend -->
+            <div class="panel">
+                <h2>Web Development</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript(kinda)</li>
+                    <li>React</li>
+                    <li>Tailwind</li>
+                </ul>
+            </div>
+
+        <!-- PIE CHART -->
+        <div class="pie-wrap">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="gBackend" cx="40%" cy="35%" r="65%">
+                        <stop offset="0%" stop-color="#d8d8d8" />
+                        <stop offset="100%" stop-color="#a8a8a8" />
+                    </radialGradient>
+                    <radialGradient id="gFrontend" cx="60%" cy="30%" r="60%">
+                        <stop offset="0%" stop-color="#4a4a4a" />
+                        <stop offset="100%" stop-color="#1a1a1a" />
+                    </radialGradient>
+                </defs>
+
+                <!-- Backend slice (~65%) -->
+                <path class="slice-designer" d="M 140 140 L 140 0 A 140 140 0 1 1 26.7 222.3 Z" fill="url(#gBackend)" />
+
+                <!-- Frontend slice (~35%) -->
+                <path class="slice-coder" d="M 140 140 L 26.7 222.3 A 140 140 0 0 1 140 0 Z" fill="url(#gFrontend)" />
+
+                <!-- Divider lines -->
+                <line class="slice-divider" x1="140" y1="140" x2="140" y2="0" />
+                <line class="slice-divider" x1="140" y1="140" x2="26.7" y2="222.3" />
+
+                <!-- Labels -->
+                <text class="slice-label" x="70" y="130" text-anchor="middle">Frontend</text>
+                <text class="slice-label" x="192" y="130" text-anchor="middle">Backend</text>
+            </svg>
+
+            <!-- RIGHT: Coder -->
+            <div class="panel">
+                <h2>Software Development</h2>
+                <ul>
+                    <li>C#</li>
+                    <li>.NET</li>
+                    <li>Database</li>
+                    <li>API</li>
+                    <li>CI/CD</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</html>
