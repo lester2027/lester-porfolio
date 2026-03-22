@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Portfolio">
     <title>Mark Lester Viloria Portfolio</title>
 
+    <link rel="icon" href="images/1.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bungee+Shade&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Passion+One:wght@400;700;900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -15,66 +23,270 @@
 
     <section class="hero">
 
-            <!-- HERO -->
-            <div class="hero-container">
+        <!-- HERO -->
+        <div class="hero-container">
 
-                <div class="hero-image">
-                    <img src="images/profile.png" alt="profile">
-                </div>
+            <div class="hero-design">
+                <pre>
+                    <code id="css">
+                        <span id="yellow">body</span> {
+                        <span id="purple">color:</span> <span id="red">red;</span>
+                        }
+                    </code>
 
-                <div class="hero-content">
+                    <code id="html">
+                        <span>&lt;p&gt;</span>Hello!<span>&lt;/p&gt;</span>
+                    </code>
 
-                    <h1>Mark Lester A. Viloria</h1>
-                    <p class="location"><i class="fa-solid fa-location-dot"></i> Bangkok, Thailand</p>
+                    <code id="csharp">
+                        <span id="blue">public class</span> <span id="green">Program</span> {
+                            <span id="blue2">static void</span> <span id="cyellow">Main</span>() {
+                                <span id="green2">Console.</span><span id="cyellow2">WriteLine</span>("Hello World");
+                            }
+                    </code>
 
-                    <h2>Full Stack Developer | .Net Developer</h2>
-
-                    <p class="stack">
-                        .NET | C# | ASP.NET | SQL Server | React | JavaScript | HTML | CSS
-                    </p>
-
-                    <div class="buttons">
-                        <a href="https://calendar.google.com/calendar/u/0/r" class="btn" target="_blank"><i class="fa-solid fa-calendar"></i> Schedule a call</a>
-                        <a href="mailto:lesterviloria1527@gmail.com" class="btn" target="_blank"><i class="fa-solid fa-envelope"></i>
-                            Send Email</a>
-                        <a href="https://github.com/lester2027" class="btn" target="_blank"><i class="fa-brands fa-github"></i> Github
-                            Profile</a>
-                    </div>
-
-                </div>
+                </pre>
             </div>
 
-
-            <!-- PROJECTS -->
-
-            <div class="projects">
-
-                <h2><i class="fa-solid fa-file"></i> Sample Projects</h2>
-
-                <div class="project-grid">
-
-                    <div class="project-card">
-                        <h3>Coram Backend</h3>
-                        <p>ASP.NET + SQL</p>
-                        <a href="#" class="btn-project">Live Demo</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Inventory API</h3>
-                        <p>.NET + React</p>
-                        <a href="#" class="btn-project">Github</a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Portfolio Website</h3>
-                        <p>HTML CSS JS</p>
-                        <a href="#" class="btn-project">View</a>
-                    </div>
-
-                </div>
+            <div class="hero-image">
+                <img src="images/profile.avif" alt="profile">
             </div>
+
+            <div class="hero-content">
+
+                <h1>Mark Lester A. Viloria</h1>
+                <p class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span class="map-tooltip">
+                        <a href="https://maps.app.goo.gl/gUi6PAz6ZsttTnCV8" target="_blank">
+                            Bangkok, Thailand
+                        </a>
+
+                        <span class="map-box">
+                            <iframe src="https://www.google.com/maps?q=Bangkok,Thailand&output=embed" width="180"
+                                height="160" style="border:0;" loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>
+                        </span>
+                    </span>
+                </p>
+
+                <h2>Full Stack Developer | .Net Developer</h2>
+
+                <p class="stack">
+                    .NET | C# | ASP.NET | SQL Server | React | JavaScript | HTML | CSS
+                </p>
+                
+                <div class="buttons">
+                    <a href="https://calendar.google.com/calendar/u/0/r" class="btn" target="_blank"><i
+                            class="fa-solid fa-calendar"></i> Schedule a call</a>
+                    <a href="mailto:lesterviloria1527@gmail.com" class="btn" target="_blank"><i
+                            class="fa-solid fa-envelope"></i>
+                        Send Email</a>
+                    <a href="https://github.com/lester2027" class="btn" target="_blank"><i
+                            class="fa-brands fa-github"></i> Github
+                        Profile</a>
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects-container">
+        <div class="projects">
+
+            <h2><i class="fa-solid fa-file" id="project-icon"></i> Sample Projects</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>Coram Backend</h3>
+                    <p>ASP.NET + SQL</p>
+                    <a href="#" class="btn-project">Live Demo</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Inventory API</h3>
+                    <p>.NET + React</p>
+                    <a href="#" class="btn-project">Github</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>HTML CSS JS</p>
+                    <a href="#" class="btn-project">View</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="aboutme-container">
+        <div class="aboutme">
+
+            <h2><i class="fa-solid fa-circle-info" id="aboutme-icon"></i> About me</h2>
+
+            <div class="aboutme-grid">
+
+                <div class="aboutme-col">
+                    <p><strong>Me in a nutshell</strong><br>
+                        <br>
+                        I’m a passionate learner currently focused on web and software development. Although I graduated
+                        with a degree in Psychology and spent time teaching, I eventually realized that my real passion
+                        lies in technology. As a child, I was always curious about how things worked, especially
+                        computers, and I loved exploring games and anything related to technology and design.<br>
+                        <br>
+                        That curiosity never really went away. Over time, I decided to reconnect with that childhood
+                        passion and pursue it seriously. I stepped away from teaching to focus on learning web
+                        development and software engineering, where I can combine creativity, problem-solving, and
+                        continuous learning.
+                        <br>
+                        <br>
+                        I enjoy building things, designing interfaces, and experimenting with new technologies. Whether
+                        it's
+                        coding a small project, improving a user interface, or learning a new framework, I find
+                        excitement in turning ideas into something real.
+                        <br>
+                        <br>
+                        Outside of coding, I still enjoy playing computer games and exploring new tools and
+                        technologies. I’m naturally curious, always looking for ways to learn, improve, and create
+                        things that people can use and enjoy.
+                    </p>
+                </div>
+
+                <div class="aboutme-col">
+                    <p><strong>Quick facts</strong>
+                        <br>
+                        <br>
+                        <strong>Home town</strong>
+                        <br>
+                        Ballesteros, Cagayan, 🇵🇭
+                        <br>
+                        <br>
+                        <strong>When I started exploring tech</strong>
+                        <br>
+                        While I was teaching, I decided to follow my long-time interest in computers and began learning
+                        web and software development.
+                        <br>
+                        <br>
+                        <strong>Education</strong>
+                        <br>
+                        Bachelor’s Degree in Psychology, plus many online tutorials, coding courses, and continuous
+                        practice in web and software development.
+                        <br>
+                        <br>
+                        <strong>Specialties</strong>
+                        <br>
+                        Web development, software development, and building projects that combine creativity and
+                        problem-solving.
+                        <br>
+                        <br>
+                        <strong>Hobbies</strong>
+                        <br>
+                        Playing computer games, designing creative projects, exploring new technologies, learning new
+                        programming tools, cooking, and going for drives.
+                        <br>
+                        <br>
+                        <strong>Favourite pastime</strong>
+                        <br>
+                        Working on personal coding projects, experimenting with designs, or discovering new tech to
+                        learn.
+                        <br>
+                        <br>
+                        <strong>If I wasn’t a developer</strong>
+                        <br>
+                        I would probably still be teaching—or exploring another creative field related to design and
+                        technology like architect.
+                        <br>
+                        <br>
+                        <strong>Favourite quote</strong>
+                        <br>
+                        “Stay curious and keep building.”
+                    </p>
+                </div>
+
+                <div class="seemore-container">
+
+                    <div class="seemore-active" id="seemore-screen">
+                        <button id="seemore-btn" type="button">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="screen" id="seemore-aboutme">
+                        <div class="seemore-aboutme-container">
+                            <p><strong>How I got into tech</strong>
+                                <br>
+                                <br>
+                                My interest in computers started when I was young. I spent a lot of time playing
+                                computer games and exploring anything related to technology. I was always curious about
+                                how things worked and enjoyed creating and designing things on the computer.
+                                <br>
+                                <br>
+                                However, my career path didn’t immediately lead me into technology. I graduated with a
+                                degree in Psychology and later became a teacher. Teaching was a meaningful experience,
+                                but over time I realized that my curiosity for technology and building things had never
+                                really disappeared.
+                                <br>
+                                <br>
+                                While teaching, I started learning web development in my spare time. What began as
+                                simple curiosity quickly turned into a passion. I found myself enjoying the process of
+                                writing code, solving problems, and designing interfaces that bring ideas to life.
+                                <br>
+                                <br>
+                                Eventually, I made the decision to step away from teaching and fully pursue my passion
+                                for technology. Since then, I’ve been focused on learning web and software development,
+                                building projects, and improving my skills every day as I work toward becoming a
+                                full-stack developer.
+                                <br>
+                                <br>
+                                For me, coding is more than just writing programs — it’s about creating, solving
+                                problems, and continuously learning something new.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SEE MORE BUTTON  -->
+                <!-- <div class="aboutme-seemorebtn">
+                    <button onclick="toggleMore()">See more</button>
+                    <div id="moreContent"></div> 
+                </div>  -->
+
+                <!-- JAVASCRIPT -->
+                <!-- <div class="hidden-text">
+                    <script class="hidden-text-container"> 
+                        let expanded = false; 
+                        function toggleMore() { 
+                        const more = document.getElementById("moreContent"); 
+                        if(!expanded) { 
+                            more.innerHTML = 
+                            ` <p><strong>How I got into tech</strong><br><br> My interest in computers started when I was young. I spent a lot of time playing computer games and exploring anything related to technology. I was always curious about how things worked and enjoyed creating and designing things on the computer. <br><br> However, my career path didn’t immediately lead me into technology. I graduated with a degree in Psychology and later became a teacher. Teaching was a meaningful experience, but over time I realized that my curiosity for technology and building things had never really disappeared. <br><br> While teaching, I started learning web development in my spare time. What began as simple curiosity quickly turned into a passion. I found myself enjoying the process of writing code, solving problems, and designing interfaces that bring ideas to life. <br><br> Eventually, I made the decision to step away from teaching and fully pursue my passion for technology. Since then, I’ve been focused on learning web and software development, building projects, and improving my skills every day as I work toward becoming a full-stack developer. <br><br> For me, coding is more than just writing programs — it’s about creating, solving problems, and continuously learning something new. </p> `; 
+                        
+                            expanded = true; }
+                            else{ 
+                                more.innerHTML = ""; 
+                                expanded = false; 
+                                } 
+                            } 
+                    </script>
+                </div> -->
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="/script.js"></script>
 
 </body>
 
